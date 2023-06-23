@@ -5,8 +5,8 @@ Docenti: A. Gysin, G. Profeta
 Elaborato 3: Manipolazione
 
 # Timeline map
-Autore: Arianna Stöckli
-[Link progetto]<br>(https://ixd-supsi.github.io/2023/esempi/mp_hands/es6/1_landmarks)
+Autore: Arianna Stöckli<br>
+[Link progetto](https://ariannastockli.github.io/Posate_e_bacchette/)
 
 
 ## Introduzione e tema
