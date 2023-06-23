@@ -6,7 +6,7 @@ Elaborato 3: Manipolazione
 
 # Timeline map
 Autore: Arianna Stöckli<br>
-[Link progetto](https://ariannastockli.github.io/Posate_e_bacchette/)
+[Link progetto](https://ariannastockli.github.io/Timeline_map/)
 
 
 ## Introduzione e tema
