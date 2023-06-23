@@ -86,4 +86,4 @@ Il codice seguente controlla se il gesto riconosciuto è "victory" (vittoria), n
 
 
 ## Target e contesto d’uso
-Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscing commodo. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus quam pellentesque nec nam aliquam sem et tortor. Turpis egestas sed tempus urna et pharetra pharetra massa. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
+Questa interfaccia potrebbe attrarre le persone interessate al cambiamento climatico, come uno studente che affronta queste tematiche e che vuole vedere su una cartina l'evoluzione nel tempo. Inoltre, potrebbe essere interessante per utenti che intendono esplorare le immagini storiche e vedere i cambiamenti della struttura urbana e del paesaggio nel corso del tempo.
