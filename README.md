@@ -28,30 +28,60 @@ https://github.com/AriannaStockli/Timeline_map/assets/126774378/d9e4142b-f032-4f
 
 
 ## Tecnologia usata
-Nunc consequat interdum varius sit amet mattis vulputate. Vehicula ipsum a arcu cursus vitae congue. Odio ut sem nulla pharetra. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Quisque egestas diam in arcu cursus. Eget nulla facilisi etiam dignissim diam. Aenean sed adipiscing diam donec adipiscing tristique. Porttitor massa id neque aliquam. Sem viverra aliquet eget sit amet tellus cras. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed turpis tincidunt id aliquet risus feugiat.
+Vengono dichiarate due variabili globali, indexImg e slideChangeInProgress, per tenere traccia dell'indice dell'immagine corrente e dello stato di avanzamento del cambio di immagine.
+```JavaScript
+let indexImg = 0;
+let slideChangeInProgress = false;
+```
 
+Ho creato un array chiamato slide con una lista di anni corrispondenti alle immagini delle mappe.
+```JavaScript
+const slide = [
+    "1860",
+    "1870",
+    "1880",
+    "1890",
+    "1900",
+    "1910",
+    "1920",
+    "1930",
+    "1940",
+    "1950",
+    "1960",
+    "1970",
+    "1980",
+    "1990",
+    "2000",
+    "2010",
+    "2020"
+];
+```
+
+I seguenti blocchi di codice gestiscono il cambio delle immagini in base ai gesti riconosciuti delle mani.<br> 
+Il codice seguente controlla se il gesto riconosciuto è "thumbs_up" (pollice in su), se non è in corso un cambio di immagine e se l'indice corrente indexImg è inferiore alla lunghezza dell'array slide. Se tutte le condizioni sono soddisfatte, viene incrementato indexImg, per passare all'immagine successiva. Viene impostato un flag per indicare che è in corso un cambio di immagine. Viene aggiornata l'immagine visualizzata con l'immagine successiva, utilizzando un ritardo di un secondo per il cambio successivo.
+```JavaScript
+  if (name == "thumbs_up" && !slideChangeInProgress && indexImg < slide.length) {
+                indexImg += 1;
+                console.log(indexImg);
+                slideChangeInProgress = true; // Set the flag to indicate a slide change is in progress
+                document.getElementById("slide").src = "assets/mappa_" + slide[indexImg] + '.png';
+                setTimeout(() => {
+                    slideChangeInProgress = false; // Reset the flag after a short delay to allow the next slide change
+                }, 1000); // Adjust the delay duration as needed
+            }
+```
+Il codice seguente controlla se il gesto riconosciuto è "victory" (vittoria), non è in corso un cambio di immagine e l'indice indexImg è maggiore di 0, viene decrementato l'indice indexImg per passare all'immagine precedente. Il resto del codice è simile al precedente.
 
 ```JavaScript
-const image = new Image();
-image.onload = () => {
-	gl.bindTexture(gl.TEXTURE_2D, texture);
-	gl.texImage2D(
-		gl.TEXTURE_2D,
-		level,
-		internalFormat,
-		srcFormat,
-		srcType,
-		image
-	);
-	if (isPowerOf2(image.width) && isPowerOf2(image.height)) {
-		gl.generateMipmap(gl.TEXTURE_2D);
-	} else {
-		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
-		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
-		gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
-	}
-};
-image.src = url;
+            if (name == "victory" && !slideChangeInProgress && indexImg > 0) {
+                indexImg -= 1;
+                console.log(indexImg);
+                slideChangeInProgress = true; // Set the flag to indicate a slide change is in progress
+                document.getElementById("slide").src = "assets/mappa_" + slide[indexImg] + '.png';
+                setTimeout(() => {
+                    slideChangeInProgress = false; // Reset the flag after a short delay to allow the next slide change
+                }, 1000); // Adjust the delay duration as needed
+            }
 ```
 
 
