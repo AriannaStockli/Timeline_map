@@ -19,8 +19,8 @@ Inoltre, ho utilizzato nccs.admin.ch per i dati riguardanti la temperatura.
 
 
 ## Design dell’interfraccia e modalià di interazione
-Il design di basa su due colonne. A sinistra è presente la timeline con l'immagine della mappa che scorre. A destra invece è presente il titolo del progetto, una legenda che spiega all'utente come scorrere le immagini (con il pollice in sù si scorre alla mappa successiva, con il gesto della vittoria, si torna indietro all'immagine precedente). 
-un’immagine con delle mappe con diversi colori che rappresentano il cambiamento della temperatura negli anni.
+Il design di basa su due colonne. A sinistra è presente la videocamera e la timeline con le immagini delle mappe che scorrono. A destra invece è presente il titolo del progetto, una legenda che spiega all'utente come scorrere le immagini (con il pollice in sù si scorre alla mappa successiva, con il gesto della vittoria, si torna indietro all'immagine precedente). 
+Inoltre, come altro dato ho inserito un’immagine con delle mappe di diversi colori, per rappresentare il cambiamento della temperatura nel corso degli anni.
 
 [<img src="documentazione/img_01.png" width="500" alt="immagine 1 interfaccia">]()
 [<img src="documentazione/img_02.png" width="500" alt="immagine 2 interfaccia">]()
