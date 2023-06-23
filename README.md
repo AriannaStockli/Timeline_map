@@ -22,8 +22,9 @@ Inoltre, ho utilizzato nccs.admin.ch per i dati riguardanti la temperatura.
 Il design di basa su due colonne. A sinistra è presente la timeline con l'immagine della mappa che scorre. A destra invece è presente il titolo del progetto, una legenda che spiega all'utente come scorrere le immagini (con il pollice in sù si scorre alla mappa successiva, con il gesto della vittoria, si torna indietro all'immagine precedente). 
 un’immagine con delle mappe con diversi colori che rappresentano il cambiamento della temperatura negli anni.
 
-[<img src="doc/cards.gif" width="500" alt="Magic trick">]()
-
+[<img src="documentazione/img_01.png" width="500" alt="immagine 1 interfaccia">]()
+[<img src="documentazione/img_02.png" width="500" alt="immagine 2 interfaccia">]()
+https://github.com/AriannaStockli/Timeline_map/assets/126774378/d9e4142b-f032-4fb1-a7ec-55a4f8930eac
 
 ## Tecnologia usata
 Nunc consequat interdum varius sit amet mattis vulputate. Vehicula ipsum a arcu cursus vitae congue. Odio ut sem nulla pharetra. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Quisque egestas diam in arcu cursus. Eget nulla facilisi etiam dignissim diam. Aenean sed adipiscing diam donec adipiscing tristique. Porttitor massa id neque aliquam. Sem viverra aliquet eget sit amet tellus cras. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed turpis tincidunt id aliquet risus feugiat.
