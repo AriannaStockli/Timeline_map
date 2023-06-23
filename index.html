@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>Interfaccia mappa</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;300;400&display=swap');
+	</style>
+	<script src="https://unpkg.com/@tensorflow/tfjs-core@3.7.0/dist/tf-core.min.js"></script>
+	<script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@3.7.0/dist/tf-backend-webgl.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection@2.0.0/dist/hand-pose-detection.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/fingerpose@0.1.0/dist/fingerpose.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<video class="layer"></video>
+		<canvas class="layer"></canvas>
+		<section class="colSx">
+
+			<ul class="timeline">
+				<li>1860</li>
+				<li>1870</li>
+				<li>1880</li>
+				<li>1890</li>
+				<li>1900</li>
+				<li>1910</li>
+				<li>1920</li>
+				<li>1930</li>
+				<li>1940</li>
+				<li>1950</li>
+				<li>1960</li>
+				<li>1970</li>
+				<li>1980</li>
+				<li>1990</li>
+				<li>2000</li>
+				<li>2010</li>
+				<li>2020</li>
+			</ul>
+
+			<div class="mappa-container">
+				<div class="mappa-slider" alt="immagine mappa 1860">
+					<img src="assets/mappa_1860.png" id="slide">
+				</div>
+
+			</div>
+
+			<div class="arrows-container">
+				<span class="material-symbols-outlined" id="left-arrow">
+					west
+				</span>
+
+				<span class="material-symbols-outlined" id="right-arrow">
+					east
+				</span>
+			</div>
+		</section>
+
+		<section class="colDx">
+			<div class="legenda">
+				<h1>Timeline map</h1>
+				<ul>
+					<li>Legenda:</li><br>
+					<li>👍 fai il pollice in su<br> per andare in avanti</li>
+					<li>✌️ fai il gesto della vittoria<br> per andare indietro</li>
+				</ul>
+			</div>
+			<div class="temperatura">
+				<p>Evoluzione temperatura °C<br><br>
+				A causa dei cambiamenti climatici, le temperature stanno aumentando principalmente a causa delle emissioni di anidride carbonica (CO2) e di altri gas ad effetto serra.
+				</p>
+				<img src="assets/temperatura.png" width="360">
+			</div>	
+		</section>
+
+	</div>
+	<script type="module" src="src/sketch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Noto Sans Mono', monospace;
+  background-color: rgb(27, 27, 27);
+  color: #ffffff;
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 1415px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+video {
+  transform: scaleX(-1);
+  display: block;
+}
+
+.colSx {
+  width: 1000px;
+  float: left;
+  margin-top: 250px;
+}
+
+.colDx {
+  width: 400px;
+  float: right;
+  padding-left: 20px;
+}
+
+.legenda {
+  height: 150px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.temperatura{
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline li {
+  display: inline-block;
+  position: relative;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-arrow {
+  float: left;
+  cursor: pointer;
+  transition: opacity 0.3 ease;
+}
+
+#right-arrow {
+  float: right;
+  cursor: pointer;
+  transition: opacity 0.3 ease;
+}
+
+.mappa-container {
+  margin-top: 20px;
+  position: relative;
+  width: 1000px;
+  height: 456px;
+  background: #ffffff;
+}
+
+.mappa-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mappa-slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.timeline .highlight {
+  text-decoration: underline;
+  text-underline-offset: 2.5px;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+canvas {
+  display: block;
+}
