@@ -70,10 +70,10 @@ Il codice seguente controlla se il gesto riconosciuto è "thumbs_up" (pollice in
                 }, 1000); // Adjust the delay duration as needed
             }
 ```
-Il codice seguente controlla se il gesto riconosciuto è "victory" (vittoria), non è in corso un cambio di immagine e l'indice indexImg è maggiore di 0, viene decrementato l'indice indexImg per passare all'immagine precedente. Il resto del codice è simile al precedente.
 
+Il codice seguente controlla se il gesto riconosciuto è "victory" (vittoria), non è in corso un cambio di immagine e l'indice indexImg è maggiore di 0, viene decrementato l'indice indexImg per passare all'immagine precedente. Il resto del codice è simile al precedente.
 ```JavaScript
-            if (name == "victory" && !slideChangeInProgress && indexImg > 0) {
+  if (name == "victory" && !slideChangeInProgress && indexImg > 0) {
                 indexImg -= 1;
                 console.log(indexImg);
                 slideChangeInProgress = true; // Set the flag to indicate a slide change is in progress
